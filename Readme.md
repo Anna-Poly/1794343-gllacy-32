@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Anna Korobkova](https://up.htmlacademy.ru/htmlcss/32/user/1794343).
-* Наставник: `Неизвестно`.
+* Наставник: [Семён Якушев](https://htmlacademy.ru/profile/id1118791).
 
 ---
 
