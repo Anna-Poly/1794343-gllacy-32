@@ -18,7 +18,7 @@
             <a class="navigation-link" href="catalog.html">Каталог</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Доставка и оплата</a> <!--Может быть, здесь и "О компании" сделать якорные ссылки на другие разделы страницы?-->
+            <a class="navigation-link" href="#">Доставка и оплата</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О компании</a>
@@ -31,7 +31,7 @@
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">
-                <span class="visually-hidden">Поиск</span> <!--Сейчас не нужно размечать поиск, вход, корзину формами?-->
+                <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="navigation-item">
@@ -40,7 +40,6 @@
             <li class="navigation-item">
                 <a class="navigation-link" href="#">
                   <span class="visually-hidden">В корзине </span>Пусто</a>
-                <!--Не понимаю, что тут написать, если текст будет менять значение в зависимости от того, что в корзине-->
             </li>          
         </ul>
       </nav>
@@ -48,58 +47,60 @@
 
     <main class="main-index">
       <h1 class="visually-hidden">Магазин мороженого "Глейси"</h1>
-      <section class="gallery">
-          <h2 class="visually-hidden">Фотогалерея</h2>
+      <section class="slider">
+        <h2 class="visually-hidden">Фотогалерея</h2>
         
-        <!-- Photoes and descriptions (может быть, вместо div использовать figure/figcaption? Вообще не понимаю, как это все реализовать списком может...) --> 
-          <div class="slider-image strawberry">
+        <!-- Photos and descriptions --> 
+        <ul class="slider-list">
+          <li class="slider-list-item strawberry">
             <img  src="" alt="Шарик пломбира, политый клубничным джемом, в вафельном рожке.">
             <h3 class="slider-header">Нежный пломбир с клубничным джемом</h3>
             <p class="slider-text">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
-          </div>
-          <div class="slider-image banana">
+            <a class="button slider-button-order" href="#">Заказать</a>
+          </li>
+          <li class="slider-list-item banana">
             <img  src="" alt="Три желтых шарика мороженого друг на друге в рожке.">
             <h3 class="slider-header">Сливочное мороженое со вкусом банана</h3>
             <p class="slider-text">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.</p>
-          </div>
-          <div class="slider-image caramel">
+            <a class="button slider-button-order" href="#">Заказать</a>
+          </li>
+          <li class="slider-list-item caramel">
             <img  src="" alt="4 шарика мороженого в виде букета в рожке, посыпаны маршмеллоу и украшены листиками мяты">
             <h3 class="slider-header">Карамельный пломбир с маршмеллоу</h3>
             <p class="slider-text">Необычный сладкий дессерт с карамельный топпингом и кусочками зефира завоюет сердца сладкоежек всех возрастов.</p>
-          </div>
-        
-        <!-- Button for order -->
-          <a class="button slider-button-order" href="#">Заказать</a>
+            <a class="button slider-button-order" href="#">Заказать</a>
+          </li>
+        </ul>  
 
         <!-- Next and previous buttons -->
-          <button class="slider-button slider-prev" type="button">
-            <span class="visually-hidden">Предыдущее фото</span>
-          </button>
-          <button class="slider-button slider-next" type="button">
-            <span class="visually-hidden">Следующее фото</span>
-          </button>
+        <button class="slider-button slider-prev" type="button">
+          <span class="visually-hidden">Предыдущее фото</span>
+        </button>
+        <button class="slider-button slider-next" type="button">
+          <span class="visually-hidden">Следующее фото</span>
+        </button>
 
-        <!-- The dots/circles Не понятно, класс current на разных страницах у разных точек...-->
-          <ol class="slider-pagination">
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                <span class="visually-hidden">1 фото</span>
-              </button>
-            </li>
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button" type="button">
-                <span class="visually-hidden">2 фото</span>
-              </button>
-            </li>
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button" type="button">
-                <span class="visually-hidden">3 фото</span>
-              </button>
-            </li>
-          </ol>
+        <!-- The dots/circles -->
+        <ol class="slider-pagination">
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button slider-pagination-button-current" type="button">
+              <span class="visually-hidden">1 фото</span>
+            </button>
+          </li>
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button" type="button">
+              <span class="visually-hidden">2 фото</span>
+            </button>
+          </li>
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button" type="button">
+              <span class="visually-hidden">3 фото</span>
+            </button>
+          </li>
+        </ol>
 
         <!-- Social Networks-->
-        <section class="main-social">
+        <section class="main-social-slider">
           <h2 class="visually-hidden">Мы в социальных сетях</h2>
           <ul class="main-social-list">
             <li class="main-social-item">
@@ -243,14 +244,11 @@
                 <span class="visually-hidden">Посмотреть дополнительную информацию</span>
               </button>
             </span>
-            <input type="date" name="text" id="date" placeholder="01.04.2020" required> <!-- Не выводит placeholder когда тип date, а жаль, ведь с date выскакивает календарь-->
+            <input type="text" name="date" id="date" placeholder="01.04.2020" required> 
           </p>
           <p class="delivery-form-phone">
             <span class="delivery-form-label delivery-form-label-icon">
               <label for="phone">Телефон</label>
-              <button class="info" type="button">
-                <span class="visually-hidden">Посмотреть дополнительную информацию</span>
-              </button>
             </span>
             <input type="tel" name="phone" id="phone" placeholder="+7 800 999-00-00" required>
           </p>
