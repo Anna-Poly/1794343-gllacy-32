@@ -1,0 +1,169 @@
+.pink {
+    background-color: #FEAFC3;
+}
+/** Blue theme **/
+
+.blue {
+    background-color: #69A9FF;
+}
+
+/** Yellow theme **/ 
+
+.yellow {
+    background-color: #FCC850;
+}
+
+
+/** Slider **/
+
+/** Photos and descriptions **/
+
+
+
+
+/** Banners **/
+
+.present-raspberry {
+    width: 570px;
+    height: 268px;
+    background-color: #FF7799;
+    border-radius: 16px;
+    background-image: url(../img/background-banner-ruspberry.png);
+    background-repeat: no-repeat;
+    background-position: 97% 100%;    
+}
+
+.present-marshmallow {
+    width: 570px;
+    height: 268px;
+    background-color: #FF7799;
+    border-radius: 16px;
+    background-image: url(../img/background-banner-marshmellow.png);
+    background-repeat: no-repeat;
+    background-position: 97% 100%;    
+}
+
+/** Goods **/
+
+.product-card {
+    width: 270px;
+    height: 332px;
+    background-color: #FCFCFC;
+    border-radius: 8px;
+}
+
+/** About us **/
+
+.about-us {
+    width: 1170px;
+    height: 480px;
+    background-image: url("../img/background-wafer.jpg");
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    padding: 24px; 
+    
+    
+}  
+
+.about-us-inner {
+    width: 1122px;
+    height: 432px;
+    background-color: #FCFCFC;
+    border-radius: 16px;     
+}
+
+.about-us-list {
+    list-style-type: none;
+    padding: 0;
+    }
+.about-us-text {
+    padding-left: 48px;
+}
+
+.ice-cream-icon {
+    background-image: url(../img/ice-cream-icon.svg);
+    background-size: 32px;
+    background-repeat: no-repeat;
+}
+
+.leaf-icon {
+    background-image: url(../img/leaf-icon.svg);
+    background-size: 32px;
+    background-repeat: no-repeat;
+}
+
+.cow-icon {
+    background-image: url(../img/cow-icon.svg);
+    background-size: 32px;
+    background-repeat: no-repeat;
+}
+
+.termometer-icon {
+    background-image: url(../img/termometer-icon.svg);
+    background-size: 32px;
+    background-repeat: no-repeat;
+}
+
+/** News and subscription **/
+
+.news {
+    width: 570px;
+    height: 216px;
+    background-image: url(../img/background-news.jpg);
+    background-repeat: no-repeat;
+    border-radius: 16px;
+}
+
+.subscription {
+    width: 570px;
+    height: 220px; 
+    background-image: url(../img/subscription-post-stripes.png);
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    padding: 6px;
+}
+
+.subscription-inner {
+    width: 558px;
+    height: 208px;
+    background-color: #FCFCFC;
+    border-radius: 16px; 
+}
+
+/** Delivery **/
+
+.delivery {
+    width: 1170px;
+    height: 534px;
+    background-image: url(../img/background-delivery.jpg);
+    background-repeat: no-repeat;
+    border-radius: 16px;
+}
+
+.delivery-form {
+    width: 500px;
+    height: 406px;
+    background-color: #FCFCFC;
+    border-radius: 8px;
+    margin: 60px;
+    margin-left: 606px;
+}
+
+/** Contacts **/
+
+.contacts {
+    width: 1170px;
+    height: 492px;
+    background-image: url(../img/background-contacts.jpg); 
+    background-repeat: no-repeat;
+    border-radius: 16px;
+}
+
+.contacts-inner {
+    width: 343px;
+    height: 364px;
+    background-color: #FCFCFC;
+    border-radius: 8px;
+    margin: 64px;
+    margin-right: 763px;
+}    
