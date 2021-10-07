@@ -1,3 +1,34 @@
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/inter-400.woff2) format(woff2);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/inter-700.woff2) format(woff2);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 900;
+    src: url(../fonts/inter-900.woff2) format(woff2);
+    font-display: swap;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: #2D3440;
+}
+
 .pink {
     background-color: #FEAFC3;
 }
@@ -13,34 +44,111 @@
     background-color: #FCC850;
 }
 
+/** Buttons **/
+
+.button {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;   
+}
+
+.slider-button-order, .present-button {
+    background-color: #FCFCFC;
+    color: #2D3440;
+    border-radius: 26px;
+}
+
+.subscription-button, .delivery-button, .button-feedback, .button-catalog {
+    background-color: #FF2F64;
+    color: #FCFCFC;
+    border-radius: 26px;
+}
+
+.button-catalog {
+    background-color: #FF4A78;
+    font-weight: 400;
+}
+
+.button-filter-and-sorting {
+    font-size: 14px;
+    background-color: rgba(252, 252, 252, 0.3);
+    border-radius: 20px;
+    width: 187px;
+    height: 36px;
+   }
+
+.button-pagination-show-more {
+    background-color: rgba(252, 252, 252, 0.4);
+    border-radius: 26px;
+    width: 179px;
+    height: 44px;
+}
+
+
+/** Header **/
+
+.navigation-link {
+    line-height: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.navigation-link-tel {
+    font-weight: 700;
+}
+
 
 /** Slider **/
 
 /** Photos and descriptions **/
+.slider-header {
+  font-size: 36px;
+  line-height: 46px;
+  font-weight: 900;  
+}
 
+.slider-text {
+    font-size: 18px;
+  line-height: 24px;
+}
 
 
 
 /** Banners **/
 
-.present-raspberry {
+.banners-title, .popular-title, .about-us-title {
+    font-size: 32px;
+    line-height: 46px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.present {
     width: 570px;
     height: 268px;
     background-color: #FF7799;
     border-radius: 16px;
+}
+.present-raspberry {
     background-image: url(../img/background-banner-ruspberry.png);
     background-repeat: no-repeat;
     background-position: 97% 100%;    
 }
 
 .present-marshmallow {
-    width: 570px;
-    height: 268px;
-    background-color: #FF7799;
-    border-radius: 16px;
     background-image: url(../img/background-banner-marshmellow.png);
     background-repeat: no-repeat;
     background-position: 97% 100%;    
+}
+
+.present-title {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
 }
 
 /** Goods **/
@@ -52,6 +160,31 @@
     border-radius: 8px;
 }
 
+.product-card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.product-card-image {
+    padding-left: 51px;
+}
+
+.product-card-title, .product-card-price {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.product-card-text {
+    text-align: center;  
+    color: #565C66;
+}
+
+.product-card-price {
+    text-align: left;
+}
+
 /** About us **/
 
 .about-us {
@@ -61,8 +194,6 @@
     border-radius: 16px;
     background-repeat: no-repeat;
     padding: 24px; 
-    
-    
 }  
 
 .about-us-inner {
@@ -77,6 +208,7 @@
     padding: 0;
     }
 .about-us-text {
+    color: #565C66;
     padding-left: 48px;
 }
 
@@ -114,6 +246,19 @@
     border-radius: 16px;
 }
 
+.news-title {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #565C66;
+}
+
+.news-text {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
 .subscription {
     width: 570px;
     height: 220px; 
@@ -130,6 +275,10 @@
     border-radius: 16px; 
 }
 
+.subscription-text, .delivery-text, .delivery-form-text {
+    color: #565C66;
+}
+
 /** Delivery **/
 
 .delivery {
@@ -140,6 +289,12 @@
     border-radius: 16px;
 }
 
+.delivery-title {
+    font-size: 32px;
+    line-height: 46px;
+    font-weight: 900;
+}
+
 .delivery-form {
     width: 500px;
     height: 406px;
@@ -147,6 +302,11 @@
     border-radius: 8px;
     margin: 60px;
     margin-left: 606px;
+}
+.date, .phone, .address {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
 }
 
 /** Contacts **/
@@ -167,3 +327,97 @@
     margin: 64px;
     margin-right: 763px;
 }    
+
+.contacts-address {
+    font-size: inherit;
+    line-height: inherit;
+    font-style: inherit;
+    color: #565C66;
+}
+
+.contacts-address-text, .contacts-phone {
+   font-size: 20px;
+   line-height: 24px;
+   font-weight: 700; 
+   color: #2D3440;
+   text-decoration: none;
+}
+
+.contacts-phone-time {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/** Reglaments list **/
+
+.footer-menu-list {
+    font-size: 14px;
+    line-height: 20px;
+    list-style-type: none;     
+}
+
+.footer-menu-link {
+    text-decoration: none;
+    color: #2D3440;
+}
+
+.footer-menu-item-favorite {
+   font-weight: 700; 
+}
+
+/** Copyright **/
+
+.copyright {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+/** Breadcrumbs **/
+
+.breadcrumbs-link {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #2D3440
+}
+
+.breadcrumbs-future-link {
+    font-weight: 400;
+}
+
+.breadcrumbs-item-choosen {
+    font-size: 32px;
+    line-height: 46px;
+    font-weight: 900;
+}
+
+/** Filters and sorting **/
+
+.catalog-filter-group {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.catalog-filter-list, .select-control, .container-price {
+    background-color: rgba(252, 252, 252, 0.3);
+    border-radius: 20px;
+}
+
+/** Paganation **/
+
+.pagination {
+    font-size: 16px;
+    line-height: 20px;    
+}
+
+.pagination-link {
+    font-size: 16px;
+    line-height: 20px;
+    color: #2D3440;
+    text-decoration: none; 
+}
+
+.pagination-current {
+    background-color: #FCFCFC;
+    border-radius: 50px;
+}

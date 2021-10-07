@@ -17,7 +17,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current">Каталог</a>
+            <a class="navigation-link navigation-link-current button button-catalog">Каталог</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Доставка и оплата</a>
@@ -29,7 +29,7 @@
         <ul class="navigation-list navigation-user">
             <li class="navigation-item">
               <span class="visually-hidden">Звоните нам по номеру</span>
-              <a class="navigation-link" href="tel:+78005558628">+7 800 555-86-28</a>
+              <a class="navigation-link navigation-link-tel" href="tel:+78005558628">+7 800 555-86-28</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">
@@ -89,12 +89,14 @@
               <label><input class="catalog-filter-input" type="number" name="min-price"> ₽ – </label>
               <label><input class="catalog-filter-input" type="number" name="max-price"> ₽</label>
             </legend>
+           <div class="container-price">
             <button class="range-toggle toggle-min" type="button">
               <span class="visually-hidden">Изменить минимальную цену</span>
             </button>
             <button class="range-toggle toggle-max" type="button">
               <span class="visually-hidden">Изменить максимальную цену.</span>
             </button>
+           </div> 
           </fieldset>
 
           <fieldset class="catalog-filter-group">
@@ -171,7 +173,7 @@
               </li>
             </ul>
           </fieldset>
-          <button class="button" type="submit">Применить</button>
+          <button class="button button-filter-and-sorting" type="submit">Применить</button>
         </form>
 
         <!--Goods-->
@@ -338,7 +340,7 @@
             </a>
           </li>
         </ul>
-        <button class="button pagination-show-more" type="button">Показать ещё</button>
+        <button class="button button-pagination-show-more" type="button">Показать ещё</button>
       </section>
     </main>
 
