@@ -12,10 +12,11 @@
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current">
+            <a class="navigation-link navigation-link-current logo">
               <img src="img/logo.svg" width="137" height="56" alt="Логотип магазина 'Глейси'." />
             </a>
           </li>
+          <div class="navigation-list-container">
           <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Каталог</a>
           </li>
@@ -25,8 +26,10 @@
           <li class="navigation-item">
             <a class="navigation-link" href="#">О компании</a>
           </li>
+          </div>
         </ul>
-        <ul class="navigation-list navigation-user">
+        <ul class="navigation-user">
+          <div class="navigation-user-container">
           <li class="navigation-item">
             <span class="visually-hidden">Звоните нам по номеру</span>
             <a class="navigation-link navigation-link-tel" href="tel:+78005558628" >+7 800 555-86-28</a>
@@ -43,11 +46,12 @@
             <a class="navigation-link" href="#">
               <span class="visually-hidden">В корзине </span>Пусто</a>
           </li>
+        </div>
         </ul>
       </nav>
     </header>
-
-    <main class="main-index">
+    <main class="main-container main-index">
+    <div class="page-container">
       <h1 class="visually-hidden">Магазин мороженого "Глейси"</h1>
       <section class="slider">
         <h2 class="visually-hidden">Фотогалерея</h2>
@@ -62,15 +66,15 @@
           </li>
           <li class="slider-list-item banana">
             <img src="img/slider-banana.png" width="66" height="150" alt="Три желтых шарика мороженого друг на друге в рожке." />
-            <h3 class="slider-header">Сливочное мороженое со вкусом банана</h3>
-            <p class="slider-text">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.</p>
-            <a class="button slider-button-order" href="#">Заказать</a>
+            <h3 class="slider-header visually-hidden">Сливочное мороженое со вкусом банана</h3>
+            <p class="slider-text visually-hidden">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.</p>
+            <a class="button slider-button-order visually-hidden" href="#">Заказать</a>
           </li>
           <li class="slider-list-item caramel">
             <img src="img/slider-caramel.png" width="66" height="150" alt="4 шарика мороженого в виде букета в рожке, посыпаны маршмеллоу и украшены листиками мяты"/>
-            <h3 class="slider-header">Карамельный пломбир с маршмеллоу</h3>
-            <p class="slider-text">Необычный сладкий десерт с карамельный топпингом и кусочками зефира завоюет сердца сладкоежек всех возрастов.</p>
-            <a class="button slider-button-order" href="#">Заказать</a>
+            <h3 class="slider-header visually-hidden">Карамельный пломбир с маршмеллоу</h3>
+            <p class="slider-text visually-hidden">Необычный сладкий десерт с карамельный топпингом и кусочками зефира завоюет сердца сладкоежек всех возрастов.</p>
+            <a class="button slider-button-order visually-hidden" href="#">Заказать</a>
           </li>
         </ul>
 
@@ -82,6 +86,7 @@
           <span class="visually-hidden">Следующее фото</span>
         </button>
 
+        <div class="slider-footer-container">
         <!-- The dots/circles -->
         <ol class="slider-pagination">
           <li class="slider-pagination-item">
@@ -102,31 +107,33 @@
         </ol>
 
         <!-- Social Networks-->
-        <section class="main-social-slider">
+        <section class="social-list main-social-slider">
           <h2 class="visually-hidden">Мы в социальных сетях</h2>
-          <ul class="main-social-list">
-            <li class="main-social-item">
+          <ul class="social-list">
+            <li class="social-item main-social-item"> <!--Проверить потом, второй класс лишний скорее всего --> 
               <a class="button" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">ВКонтакте</span>
               </a>
             </li>
-            <li class="main-social-item">
+            <li class="social-item main-social-item">
               <a class="button" href="https://www.facebook.com/htmlacademy">
                 <span class="visually-hidden">Фейсбук</span>
               </a>
             </li>
-            <li class="main-social-item">
+            <li class="social-item main-social-item">
               <a class="button" href="https://www.instagram.com/htmlacademy/">
                 <span class="visually-hidden">Инстаграм</span>
               </a>
             </li>
           </ul>
         </section>
+      </div>
       </section>
 
       <!-- Banners-->
       <section class="banners">
         <h2 class="banners-title">Заказывайте мороженое и получайте подарки!</h2>
+        <div class="banners-container">
         <article class="present present-raspberry">
           <h3 class="present-title">Малинка даром!</h3>
           <p class="present-text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -137,6 +144,7 @@
           <p class="present-text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
           <a class="button present-button" href="#">Хочу подарок</a>
         </article>
+      </div>
       </section>
 
       <!-- Popular goods-->
@@ -196,6 +204,7 @@
           <h2 class="about-us-title">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого
             собственного проиводства на развес</h2>
           <ul class="about-us-list">
+            <div class="about-us-list-part">
             <li class="about-us-item">
               <p class="about-us-text ice-cream-icon">Все наше мороженое изгатавливается на собственном производстве,
                 с использованием современного оборудования и проверенных
@@ -206,6 +215,8 @@
                 высочайшего качества. Все ингредиенты и добавки произведены из
                 натурального сырья.</p>
             </li>
+            </div>
+            <div class="about-us-list-part">
             <li class="about-us-item">
               <p class="about-us-text cow-icon">Закупка ингредиентов производится только у проверенных
                 фермерских хозяйств, с которыми нас связывает долговременное
@@ -216,11 +227,13 @@
                 термопаке, который не дает мороженому растаять и позволяет
                 сохранить превосходный вкус.</p>
             </li>
+            </div>
           </ul>
         </div>
       </section>
 
       <!-- News and subscription-->
+      <div class="news-and-subscription-container">
       <article class="news">
         <h2 class="news-title">Новое в нашем блоге</h2>
         <p class="news-text">10 способов сервировки фруктовых щербетов к столу</p>
@@ -242,16 +255,19 @@
           </form>
         </div>
       </section>
+      </div>
 
       <!-- Delivery-->
       <section class="delivery">
+        <div class="delivery-container">
         <h2 class="delivery-title">Доставка любимого мороженого на дом</h2>
         <p class="delivery-text">Хочется полакомиться любимым дессертом, но нет времени съездить в магазин? 
           Закажите доставку мороженого на дом и курьер привезет вам ваш
           заказ в течение часа!</p>
+        </div>
         <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="delivery-form-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
-          <p class="delivery-form-date">
+          <p class="delivery-form-text delivery-form-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+          <p class="delivery-form-date delivery-form-text">
             <span class="delivery-form-label delivery-form-label-icon">
               <label class="date" for="date">Дата</label>
               <button class="info" type="button">
@@ -260,13 +276,13 @@
             </span>
             <input type="text" name="date" id="date" placeholder="01.04.2020" required/>
           </p>
-          <p class="delivery-form-phone">
+          <p class="delivery-form-phone delivery-form-text">
             <span class="delivery-form-label delivery-form-label-icon">
               <label class="phone" for="phone">Телефон</label>
             </span>
             <input type="tel" name="phone" id="phone" placeholder="+7 800 999-00-00" required/>
           </p>
-          <p class="delivery-form-address">
+          <p class="delivery-form-address delivery-form-text">
             <span class="delivery-form-label delivery-form-label-icon">
               <label class="address" for="address">Адрес</label>
               <button class="info" type="button">
@@ -293,6 +309,7 @@
           <a class="button button-feedback" href="#">Форма обратной связи</a>
         </div>
       </section>
+    </div>
     </main>
 
     <footer class="page-footer">
@@ -300,18 +317,18 @@
       <!-- Social Networks-->
       <section class="footer-social">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
+        <ul class="social-list footer-social-list">
+          <li class="social-item footer-social-item">
             <a class="button" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">ВКонтакте</span>
             </a>
           </li>
-          <li class="footer-social-item">
+          <li class="social-item footer-social-item">
             <a class="button" href="https://www.facebook.com/htmlacademy">
               <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
-          <li class="footer-social-item">
+          <li class="social-item footer-social-item">
             <a class="button" href="https://www.instagram.com/htmlacademy/">
               <span class="visually-hidden">Инстаграм</span>
             </a>
@@ -323,18 +340,22 @@
       <section class="footer-menu">
         <h2 class="visually-hidden">Регламенты</h2>
         <ul class="footer-menu-list">
+          <div class="footer-menu-item-part">
           <li class="footer-menu-item footer-menu-item-favorite">
             <a class="footer-menu-link footer-menu-link-favorite" href="#"><b>Для поставщиков</b></a>
           </li>
           <li class="footer-menu-item">
             <a class="footer-menu-link" href="#">О производстве</a>
           </li>
+          </div>
+          <div class="footer-menu-item-part">
           <li class="footer-menu-item">
             <a class="footer-menu-link" href="#">Наши документы</a>
           </li>
           <li class="footer-menu-item">
             <a class="footer-menu-link" href="#">Экологические стандарты</a>
           </li>
+        </div>
         </ul>
       </section>
 
@@ -342,11 +363,9 @@
       <section class="copyright">
         <h2 class="visually-hidden">Авторское право</h2>
         <a class="html-logo-link" href="https://htmlacademy.ru/">
-          <img class="html-logo-image" src="img/logo_htmlacademy.svg" width="93" height="27"  alt="Логототип html Академии."/> <!-- height=26.71 in figma -->
+          <img class="html-logo-image" src="img/logo_htmlacademy.svg" width="93" height="26.71" alt="Логототип html Академии.">
         </a>
-        <p class="coopyright-text">
-          Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>&copy; 2021
-        </p>
+        <p class="coopyright-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>&copy; 2021</p>
       </section>
     </footer>
   </body>

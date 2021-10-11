@@ -6,8 +6,8 @@
     <link href="styles/styles.css" rel="stylesheet">
   </head>
   
-  <!--Change class "pink" to "blue" for blue theme; change to "yellow" for yellow theme-->
-  <body class="pink"> 
+  
+  <body> 
     <header class="main-header">
       <nav class="navigation">
         <ul class="navigation-list">
@@ -16,6 +16,7 @@
               <img src="img/logo.svg" width="137" height="56" alt="Логотип магазина 'Глейси'.">
             </a>
           </li>
+          <div class="navigation-list-container">
           <li class="navigation-item">
             <a class="navigation-link navigation-link-current button button-catalog">Каталог</a>
           </li>
@@ -25,8 +26,10 @@
           <li class="navigation-item">
             <a class="navigation-link" href="#">О компании</a>
           </li>
+        </div>
         </ul>
-        <ul class="navigation-list navigation-user">
+        <ul class="navigation-user">
+          <div class="navigation-user-container">
             <li class="navigation-item">
               <span class="visually-hidden">Звоните нам по номеру</span>
               <a class="navigation-link navigation-link-tel" href="tel:+78005558628">+7 800 555-86-28</a>
@@ -42,11 +45,13 @@
             <li class="navigation-item">
                 <a class="navigation-link" href="#">
                   <span class="visually-hidden">В корзине</span>Пусто</a>
-            </li>          
+            </li>
+          </div>          
         </ul>
       </nav>
     </header>
-    <main class="main-inner">
+    <main class="main-container main-inner">
+      <div class="page-container">
       
       <!--Breadcrumbs-->
       <header class="inner-header">
@@ -101,7 +106,7 @@
 
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Жирность</legend>
-            <ul class="catalog-filter-list">
+            <ul class="catalog-filter-list catalog-filter-list-fat">
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="radio" name="fat-content" value="0%">
@@ -135,7 +140,7 @@
 
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Наполнители</legend>
-            <ul class="catalog-filter-list">
+            <ul class="catalog-filter-list catalog-filter-list-toping">
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="chocolate" checked>
@@ -313,6 +318,7 @@
         </ul>
 
         <!--Paganation-->
+        <div class="pagination-container">
         <ul class="pagination">
           <li class="pagination-item">
             <a class="pagination-link pagination-prev pagination-disabled">
@@ -341,7 +347,9 @@
           </li>
         </ul>
         <button class="button button-pagination-show-more" type="button">Показать ещё</button>
+      </div>
       </section>
+      </div>
     </main>
 
     <footer class="page-footer">
@@ -349,40 +357,45 @@
       <!-- Social Networks-->
       <section class="footer-social">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
+        <ul class="social-list footer-social-list">
+          <li class="social-item footer-social-item">
             <a class="button" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">ВКонтакте</span>
             </a>
           </li>
-          <li class="footer-social-item">
+          <li class="social-item footer-social-item">
             <a class="button" href="https://www.facebook.com/htmlacademy">
               <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
-          <li class="footer-social-item">
+          <li class="social-item footer-social-item">
             <a class="button" href="https://www.instagram.com/htmlacademy/">
               <span class="visually-hidden">Инстаграм</span>
             </a>
           </li>
         </ul>
-      </section> 
+      </section>
 
       <!-- Reglaments list-->
       <section class="footer-menu">
         <h2 class="visually-hidden">Регламенты</h2>
         <ul class="footer-menu-list">
-          <li class="footer-menu-item bold">
-            <a class="footer-menu-link favorite" href="#">Для поставщиков</a>
+          <div class="footer-menu-item-part">
+          <li class="footer-menu-item footer-menu-item-favorite">
+            <a class="footer-menu-link footer-menu-link-favorite" href="#"><b>Для поставщиков</b></a>
           </li>
           <li class="footer-menu-item">
             <a class="footer-menu-link" href="#">О производстве</a>
-          </li><li class="footer-menu-item">
+          </li>
+          </div>
+          <div class="footer-menu-item-part">
+          <li class="footer-menu-item">
             <a class="footer-menu-link" href="#">Наши документы</a>
           </li>
           <li class="footer-menu-item">
             <a class="footer-menu-link" href="#">Экологические стандарты</a>
           </li>
+        </div>
         </ul>
       </section>
 

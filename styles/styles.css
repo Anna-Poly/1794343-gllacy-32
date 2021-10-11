@@ -22,11 +22,20 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "Inter", sans-serif;
     font-size: 16px;
     line-height: 22px;
     color: #2D3440;
+    background-color: #FEAFC3;
 }
 
 .pink {
@@ -44,6 +53,10 @@ body {
     background-color: #FCC850;
 }
 
+.visually-hidden {
+    display: none;
+}
+
 /** Buttons **/
 
 .button {
@@ -55,6 +68,7 @@ body {
     text-decoration: none;   
 }
 
+/** Семен, я наверное зря вынесла все кнопки сюда, тут походу надо было только общие стили для всех кнопок? Если что, я в след дз поправлю **/
 .slider-button-order, .present-button {
     background-color: #FCFCFC;
     color: #2D3440;
@@ -78,7 +92,7 @@ body {
     border-radius: 20px;
     width: 187px;
     height: 36px;
-   }
+ }
 
 .button-pagination-show-more {
     background-color: rgba(252, 252, 252, 0.4);
@@ -90,7 +104,61 @@ body {
 
 /** Header **/
 
+.navigation {
+    /** borders for good visability - delete in the end **/
+    border: 2px solid black; 
+    display: flex;
+    width: 1170px;
+    height: 104px;
+    margin: 0 auto;
+    
+}
+
+.navigation-list {
+    border: 2px solid red;
+    display: flex;    
+    width: 700px; /** 553 in maket**/
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    align-items: center;
+}
+
+.navigation-user {
+    border: 2px solid red;
+    display: flex;  
+    max-width: 470px; /** 419 in maket**/
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation-list-container {
+    border: 2px solid yellow;
+    display: flex;
+    width: 400px;
+    margin-left: 15px;
+    margin-right: auto;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navigation-user-container {
+    border: 2px solid yellow;
+    display: flex;
+    max-width: 419px;
+    margin-left: auto;
+    justify-content: space-between;
+    align-items: center; 
+
+}
+
 .navigation-link {
+    font-family: inherit;
     line-height: 20px;
     text-align: center;
     text-decoration: none;
@@ -101,30 +169,146 @@ body {
     font-weight: 700;
 }
 
+/** Main **/
+
+.main-container {
+    flex-grow: 1;
+}
+
+.page-container {
+    border: 2px solid grey;
+    width: 1170px;
+    margin: 0 auto;
+  }
+
 
 /** Slider **/
 
 /** Photos and descriptions **/
+
+.slider-list {
+    display: flex;
+    width: 1170px;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
 .slider-header {
-  font-size: 36px;
-  line-height: 46px;
-  font-weight: 900;  
+    font-size: 36px;
+    line-height: 46px;
+    font-weight: 900;  
 }
 
-.slider-text {
+/** Не понимаю, почему картинка крупная выпадает из флекса, а не сжимает текст? Блин наверное надо было картинки во флекс обеъдинить отдельно. Как присобачить кнопки переключения слайдера **/
+.slider-list-item {
+    border: 2px solid green;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    height: 507px;
+    max-width: 818px;
+ }
+
+ .slider-list-item img {
+   order: 1; 
+    
+ }
+
+ .slider-text {
     font-size: 18px;
-  line-height: 24px;
+    line-height: 24px;
+}
+
+/** The dots/circles and Social Networks **/
+
+/** Почему пагинация и соц сети потеряли функции кнопок/ссылок? **/
+.slider-footer-container {
+    border: 2px solid yellow;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider-pagination {
+    border: 2px solid rgb(14, 13, 13);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 52px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.slider-pagination-button {
+    background-color: #FCFCFC;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    opacity: 0.3;
+    padding: 0;
+    border: none;
+}
+
+.slider-pagination-button-current {
+    opacity: 1;
+}
+
+.social-list {
+    border: 2px solid rgb(14, 13, 13);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 104px;
+    height: 24px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
 }
 
 
+.social-item:first-child {
+    background-image: url(../img/VK.svg);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+}
+
+.social-item:nth-child(2) {
+    background-image: url(../img/Facebook.svg);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+}
+
+.social-item:last-child {
+    background-image: url(../img/Instagram.svg);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+}
 
 /** Banners **/
 
+.banners-container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .banners-title, .popular-title, .about-us-title {
+    border: 2px solid gold;
+    padding: 0;
+    margin: 0 auto;
     font-size: 32px;
     line-height: 46px;
     font-weight: 900;
     text-align: center;
+}
+.banners-title {
+    width: 460px;
 }
 
 .present {
@@ -152,6 +336,18 @@ body {
 }
 
 /** Goods **/
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    width: 1170px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+}
 
 .product-card {
     width: 270px;
@@ -191,9 +387,11 @@ body {
     width: 1170px;
     height: 480px;
     background-image: url("../img/background-wafer.jpg");
-    border-radius: 16px;
+    background-color: #FEAFC3;
     background-repeat: no-repeat;
+    border-radius: 16px;
     padding: 24px; 
+    box-sizing: border-box;  
 }  
 
 .about-us-inner {
@@ -204,39 +402,69 @@ body {
 }
 
 .about-us-list {
+    border: 2px solid green;
+    display: flex;
+    justify-content: space-between;
+    width: 1042px;
+    height: 172px;
     list-style-type: none;
     padding: 0;
+    margin: 0 auto;
     }
+
+.about-us-list-part {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    width: 506px;
+    justify-content: space-between;
+ }
+
+
 .about-us-text {
     color: #565C66;
-    padding-left: 48px;
+    width: 442px;
+    padding-left: 64px;
+    margin: 0;
+    max-width: 442px;
 }
 
 .ice-cream-icon {
     background-image: url(../img/ice-cream-icon.svg);
-    background-size: 32px;
+    background-size: 48px;
     background-repeat: no-repeat;
+    background-position-y: center;
 }
 
 .leaf-icon {
     background-image: url(../img/leaf-icon.svg);
-    background-size: 32px;
+    background-size: 48px;
     background-repeat: no-repeat;
+    background-position-y: center;
 }
 
 .cow-icon {
     background-image: url(../img/cow-icon.svg);
-    background-size: 32px;
+    background-size: 48px;
     background-repeat: no-repeat;
+    background-position-y: center;
 }
 
 .termometer-icon {
     background-image: url(../img/termometer-icon.svg);
-    background-size: 32px;
+    background-size: 48px;
     background-repeat: no-repeat;
+    background-position-y: center;
 }
 
 /** News and subscription **/
+
+.news-and-subscription-container {
+    display: flex;
+    /** вот я везде в px указываю, может надо было 100%? **/
+    width: 1170px;
+    justify-content: space-between;
+}
 
 .news {
     width: 570px;
@@ -265,7 +493,7 @@ body {
     background-image: url(../img/subscription-post-stripes.png);
     background-repeat: no-repeat;
     border-radius: 16px;
-    padding: 6px;
+    padding: 0;
 }
 
 .subscription-inner {
@@ -273,15 +501,22 @@ body {
     height: 208px;
     background-color: #FCFCFC;
     border-radius: 16px; 
+    margin: 6px;
 }
 
 .subscription-text, .delivery-text, .delivery-form-text {
     color: #565C66;
+    margin: 0;
+
 }
 
 /** Delivery **/
 
 .delivery {
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 1170px;
     height: 534px;
     background-image: url(../img/background-delivery.jpg);
@@ -289,10 +524,22 @@ body {
     border-radius: 16px;
 }
 
+.delivery-container {
+    display: flex;
+    border: 2px solid yellow;
+    flex-direction: column;
+    width: 371px;
+}
+
 .delivery-title {
     font-size: 32px;
     line-height: 46px;
     font-weight: 900;
+    margin: 0;
+}
+
+.delivery-text {
+    margin: 0;
 }
 
 .delivery-form {
@@ -300,8 +547,7 @@ body {
     height: 406px;
     background-color: #FCFCFC;
     border-radius: 8px;
-    margin: 60px;
-    margin-left: 606px;
+    
 }
 .date, .phone, .address {
     font-size: 16px;
@@ -317,6 +563,8 @@ body {
     background-image: url(../img/background-contacts.jpg); 
     background-repeat: no-repeat;
     border-radius: 16px;
+    padding: 64px;
+    box-sizing: border-box;  
 }
 
 .contacts-inner {
@@ -324,9 +572,12 @@ body {
     height: 364px;
     background-color: #FCFCFC;
     border-radius: 8px;
-    margin: 64px;
-    margin-right: 763px;
-}    
+    margin-right: 763px;       
+}  
+
+.contacts-address-title {
+    margin-top: 0;
+}
 
 .contacts-address {
     font-size: inherit;
@@ -348,12 +599,37 @@ body {
     line-height: 20px;
 }
 
+
+/** Footer **/
+
 /** Reglaments list **/
 
+.page-footer {
+    border: 2px solid black;
+    display: flex;
+    width: 1170px;
+    margin: 0 auto;
+    
+}
 .footer-menu-list {
+    display: flex;
+    width: 356px;
+    box-sizing: border-box;
     font-size: 14px;
     line-height: 20px;
-    list-style-type: none;     
+    list-style-type: none;
+    padding: 0;
+    margin-left: 303px;
+    
+}
+
+.footer-menu-item {
+    padding-left: 20px;
+}
+
+.footer-menu-item-part {
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-menu-link {
@@ -362,7 +638,11 @@ body {
 }
 
 .footer-menu-item-favorite {
-   font-weight: 700; 
+    background-image: url(../img/heart.svg);
+    background-repeat: no-repeat;
+    background-size: 14px;
+    background-position-y: center;
+    font-weight: 700; 
 }
 
 /** Copyright **/
@@ -370,9 +650,21 @@ body {
 .copyright {
     font-size: 12px;
     line-height: 16px;
+    margin-left:auto;
 }
 
+/** Catalog **/
+
 /** Breadcrumbs **/
+
+.breadcrumbs {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    padding: 0;
+    width: 250px;
+
+}
 
 .breadcrumbs-link {
     font-size: 14px;
@@ -393,9 +685,24 @@ body {
 
 /** Filters and sorting **/
 
+.catalog-filter {
+    display: flex;
+    width: 807px;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
 .catalog-filter-group {
+
     font-size: 14px;
     line-height: 20px;
+    padding: 0;
+    border: none;
+}
+
+.catalog-filter-input {
+    width: 30px;
 }
 
 .catalog-filter-list, .select-control, .container-price {
@@ -403,11 +710,45 @@ body {
     border-radius: 20px;
 }
 
+.catalog-filter-list {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.catalog-filter-list-fat {
+    width: 367px;
+}
+
+.catalog-filter-list-toping {
+    width: 596px;
+}
+
+
 /** Paganation **/
 
+.pagination-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 .pagination {
+    display: flex;
+    width: 194px;
     font-size: 16px;
-    line-height: 20px;    
+    line-height: 20px;   
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
+    justify-content: space-between;
+    order: 1;
+}
+
+.button-pagination-show-more {
+    margin: 0 auto;
 }
 
 .pagination-link {
