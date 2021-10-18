@@ -16,7 +16,6 @@
               <img src="img/logo.svg" width="137" height="56" alt="Логотип магазина 'Глейси'." />
             </a>
           </li>
-          <div class="navigation-list-container">
           <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Каталог</a>
           </li>
@@ -26,27 +25,24 @@
           <li class="navigation-item">
             <a class="navigation-link" href="#">О компании</a>
           </li>
-          </div>
         </ul>
-        <ul class="navigation-user">
-          <div class="navigation-user-container">
+        <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <span class="visually-hidden">Звоните нам по номеру</span>
             <a class="navigation-link navigation-link-tel" href="tel:+78005558628" >+7 800 555-86-28</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-link button button-search" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Вход</a>
+            <a class="navigation-link button button-enter" href="#">Вход</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-link button button-cart" href="#">
               <span class="visually-hidden">В корзине </span>Пусто</a>
           </li>
-        </div>
         </ul>
       </nav>
     </header>
@@ -60,21 +56,27 @@
         <ul class="slider-list">
           <li class="slider-list-item strawberry">
             <img class="strawberry-image" src="img/slider-strawberry.png" width="306" height="507" alt="Шарик пломбира, политый клубничным джемом, в вафельном рожке."/>
-            <h3 class="slider-header">Нежный пломбир с клубничным джемом</h3>
-            <p class="slider-text">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
-            <a class="button slider-button-order" href="#">Заказать</a>
+            <div class="slider-container slider-container-current">
+              <h3 class="slider-header">Нежный пломбир с клубничным джемом</h3>
+              <p class="slider-text">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
+              <a class="button slider-button-order" href="#">Заказать</a>
+            </div>  
           </li>
           <li class="slider-list-item banana">
             <img src="img/slider-banana.png" width="66" height="150" alt="Три желтых шарика мороженого друг на друге в рожке." />
-            <h3 class="slider-header visually-hidden">Сливочное мороженое со вкусом банана</h3>
-            <p class="slider-text visually-hidden">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.</p>
-            <a class="button slider-button-order visually-hidden" href="#">Заказать</a>
+            <div class="slider-container">
+              <h3 class="slider-header visually-hidden">Сливочное мороженое со вкусом банана</h3>
+              <p class="slider-text visually-hidden">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.</p>
+              <a class="button slider-button-order visually-hidden" href="#">Заказать</a>
+            </div>
           </li>
           <li class="slider-list-item caramel">
             <img src="img/slider-caramel.png" width="66" height="150" alt="4 шарика мороженого в виде букета в рожке, посыпаны маршмеллоу и украшены листиками мяты"/>
-            <h3 class="slider-header visually-hidden">Карамельный пломбир с маршмеллоу</h3>
-            <p class="slider-text visually-hidden">Необычный сладкий десерт с карамельный топпингом и кусочками зефира завоюет сердца сладкоежек всех возрастов.</p>
-            <a class="button slider-button-order visually-hidden" href="#">Заказать</a>
+            <div class="slider-container">
+              <h3 class="slider-header visually-hidden">Карамельный пломбир с маршмеллоу</h3>
+              <p class="slider-text visually-hidden">Необычный сладкий десерт с карамельный топпингом и кусочками зефира завоюет сердца сладкоежек всех возрастов.</p>
+              <a class="button slider-button-order visually-hidden" href="#">Заказать</a>
+            </div>
           </li>
         </ul>
 
@@ -87,7 +89,8 @@
         </button>
 
         <div class="slider-footer-container">
-        <!-- The dots/circles -->
+        
+          <!-- The dots/circles -->
         <ol class="slider-pagination">
           <li class="slider-pagination-item">
             <button class="slider-pagination-button slider-pagination-button-current" type="button" >
@@ -110,18 +113,18 @@
         <section class="social-list main-social-slider">
           <h2 class="visually-hidden">Мы в социальных сетях</h2>
           <ul class="social-list">
-            <li class="social-item main-social-item"> <!--Проверить потом, второй класс лишний скорее всего --> 
-              <a class="button" href="https://vk.com/htmlacademy">
+            <li class="social-item"> 
+              <a class="button social-item-button" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">ВКонтакте</span>
               </a>
             </li>
-            <li class="social-item main-social-item">
-              <a class="button" href="https://www.facebook.com/htmlacademy">
+            <li class="social-item">
+              <a class="button social-item-button" href="https://www.facebook.com/htmlacademy">
                 <span class="visually-hidden">Фейсбук</span>
               </a>
             </li>
-            <li class="social-item main-social-item">
-              <a class="button" href="https://www.instagram.com/htmlacademy/">
+            <li class="social-item">
+              <a class="button social-item-button" href="https://www.instagram.com/htmlacademy/">
                 <span class="visually-hidden">Инстаграм</span>
               </a>
             </li>
@@ -266,7 +269,7 @@
           заказ в течение часа!</p>
         </div>
         <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="delivery-form-text delivery-form-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+          <p class="delivery-form-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
           <p class="delivery-form-date delivery-form-text">
             <span class="delivery-form-label delivery-form-label-icon">
               <label class="date" for="date">Дата</label>
@@ -317,23 +320,23 @@
       <!-- Social Networks-->
       <section class="footer-social">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
-        <ul class="social-list footer-social-list">
-          <li class="social-item footer-social-item">
-            <a class="button" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">ВКонтакте</span>
-            </a>
-          </li>
-          <li class="social-item footer-social-item">
-            <a class="button" href="https://www.facebook.com/htmlacademy">
-              <span class="visually-hidden">Фейсбук</span>
-            </a>
-          </li>
-          <li class="social-item footer-social-item">
-            <a class="button" href="https://www.instagram.com/htmlacademy/">
-              <span class="visually-hidden">Инстаграм</span>
-            </a>
-          </li>
-        </ul>
+          <ul class="social-list">
+            <li class="social-item"> 
+              <a class="button social-item-button" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">ВКонтакте</span>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="button social-item-button" href="https://www.facebook.com/htmlacademy">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="button social-item-button" href="https://www.instagram.com/htmlacademy/">
+                <span class="visually-hidden">Инстаграм</span>
+              </a>
+            </li>
+          </ul>
       </section>
 
       <!-- Reglaments list-->
