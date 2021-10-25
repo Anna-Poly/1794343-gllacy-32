@@ -46,6 +46,7 @@
         </ul>
       </nav>
     </header>
+    
     <main class="main-container main-index">
     <div class="page-container">
       <h1 class="visually-hidden">Магазин мороженого "Глейси"</h1>
@@ -269,30 +270,30 @@
           заказ в течение часа!</p>
         </div>
         <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="delivery-form-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+          <p class="delivery-form-text delivery-form-title">Укажите адрес и дату доставки, и мы свяжемся с&nbsp;вами, чтобы подтвердить заказ.</p>
           <p class="delivery-form-date delivery-form-text">
             <span class="delivery-form-label delivery-form-label-icon">
-              <label class="date" for="date">Дата</label>
+              <label class="delivery-label" for="date">Дата</label>
               <button class="info" type="button">
                 <span class="visually-hidden" >Посмотреть дополнительную информацию</span>
               </button>
             </span>
-            <input type="text" name="date" id="date" placeholder="01.04.2020" required/>
+            <input class="delivery-input" type="text" name="date" id="date" placeholder="01.04.2020" required/>
           </p>
           <p class="delivery-form-phone delivery-form-text">
             <span class="delivery-form-label delivery-form-label-icon">
-              <label class="phone" for="phone">Телефон</label>
+              <label class="delivery-label" for="phone">Телефон</label>
             </span>
-            <input type="tel" name="phone" id="phone" placeholder="+7 800 999-00-00" required/>
+            <input class="delivery-input" type="tel" name="phone" id="phone" placeholder="+7 800 999-00-00" required/>
           </p>
           <p class="delivery-form-address delivery-form-text">
             <span class="delivery-form-label delivery-form-label-icon">
-              <label class="address" for="address">Адрес</label>
+              <label class="delivery-label" for="address">Адрес</label>
               <button class="info" type="button">
                 <span class="visually-hidden">Посмотреть дополнительную информацию</span>
               </button>
             </span>
-            <input type="text" name="address" id="address" placeholder="ул. Большая Конюшенная, 19/8" required />
+            <input class="delivery-input" type="text" name="address" id="address" placeholder="ул. Большая Конюшенная, 19/8" required />
           </p>
           <button class="button delivery-button" type="submit">Отправить</button>
         </form>
