@@ -37,14 +37,12 @@
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link button button-enter" href="#">
-                <svg class="navigation-icon navigation-icon-enter" aria-hidden="true" focusable="false" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.2.9c0-.4.3-.7.7-.7h3A2.2 2.2 0 0 1 15 2.4v10.5A2.2 2.2 0 0 1 13 15h-3a.7.7 0 0 1 0-1.3h3a.8.8 0 0 0 .8-.8V2.4a.8.8 0 0 0-.8-.9h-3a.7.7 0 0 1-.7-.6ZM5.7 3.4c.2-.3.6-.3.9 0l3.7 3.7a.7.7 0 0 1 0 1l-3.7 3.7a.7.7 0 1 1-1-.9l2.7-2.6H.9A.7.7 0 0 1 .9 7h7.4L5.7 4.3a.7.7 0 0 1 0-.9Z" fill="#2D3440"/></svg>
-                Вход</a>
+              <a class="navigation-link button button-enter" href="#">Вход</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link button button-cart" href="#">
-                <svg class="navigation-icon navigation-icon-cart" aria-hidden="true" focusable="false" width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.31.49a.67.67 0 0 0 0 1.33h2.06l.54 2.7.01.05 1.1 5.44a1.97 1.97 0 0 0 1.96 1.6h6.32a1.97 1.97 0 0 0 1.96-1.6l1.05-5.47a.67.67 0 0 0-.66-.8H5.12l-.55-2.71a.67.67 0 0 0-.65-.54h-2.6Zm5.01 9.26L5.4 5.08h9.46l-.9 4.68a.64.64 0 0 1-.63.5H6.96a.64.64 0 0 1-.64-.5ZM5.21 14.2a1.32 1.32 0 1 1 2.64 0 1.32 1.32 0 0 1-2.64 0Zm7.17 0a1.32 1.32 0 1 1 2.64 0 1.32 1.32 0 0 1-2.64 0Z" fill="#2D3440"/></svg>
-                <span class="visually-hidden">В корзине </span>Пусто</a>
+              <a class="navigation-link button button-cart button-cart-full" href="#">
+                <span class="visually-hidden">В корзине </span>2 товара
+              </a>
             </li>    
         </ul>
       </nav>
@@ -64,9 +62,6 @@
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link breadcrumbs-current-link">Сливочное</a>
-          </li>
-          <li class="breadcrumbs-item visually-hidden">
-            <a class="breadcrumbs-link breadcrumbs-future-link">Малинка</a> <!--breadcrumbs-future-link?-->
           </li>
         </ul>
         <p class="breadcrumbs-item-choosen">Сливочное мороженое</p>
@@ -177,16 +172,16 @@
               </li>
             </ul>
           </fieldset>
-          <button class="button button-filter-and-sorting" type="submit">Применить</button>
+          <button class="button transparent-button button-filter-and-sorting" type="submit">Применить</button>
         </form>
 
         <!--Goods-->
         <ul class="product-list">
           <li class="product-card">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="img/catalog/catalog-raspberry.png" width="168" height="168"  alt="">
+              <img class="product-card-image" src="img/catalog/catalog-raspberry.png" width="192" height="184"  alt="">
               <h3 class="product-card-title">Малинка</h3>
-              <p class="product-card-text">Сливочное мороженое с малиновым джемом</p>
+              <p class="product-card-text">Сливочное мороженое с&nbsp;малиновым джемом</p>
             </a>
             <b class="product-card-price">310 ₽/кг</b>
             <a class="product-card-button button" href="#">
@@ -195,9 +190,9 @@
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="img/catalog/catalog-pistachio.png" width="168" height="168" alt="">
+              <img class="product-card-image" src="img/catalog/catalog-pistachio.png" width="192" height="184" alt="">
               <h3 class="product-card-title">Фисташка</h3>
-              <p class="product-card-text">Фисташковый пломбир с кусочками шоколада</p>
+              <p class="product-card-text">Фисташковый пломбир с&nbsp;кусочками шоколада</p>
             </a>
             <b class="product-card-price">340 ₽/кг</b>
             <a class="product-card-button button" href="#">
@@ -206,9 +201,9 @@
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="img/catalog/catalog-blueberry.png" width="168" height="168" alt="">
+              <img class="product-card-image" src="img/catalog/catalog-blueberry.png" width="192" height="184" alt="">
               <h3 class="product-card-title">Черника</h3>
-              <p class="product-card-text">Крем-брюле с черничным джемом</p>
+              <p class="product-card-text">Крем-брюле с&nbsp;черничным джемом</p>
             </a>
             <b class="product-card-price">330 ₽/кг</b>
             <a class="product-card-button button" href="#">
@@ -217,9 +212,9 @@
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="img/catalog/catalog-bubble-gum.png" width="168" height="168" alt="">
+              <img class="product-card-image" src="img/catalog/catalog-bubble-gum.png" width="192" height="184" alt="">
               <h3 class="product-card-title">Бабл-гам</h3>
-              <p class="product-card-text">Ванильный пломбир со сладкой посыпкой</p>
+              <p class="product-card-text">Ванильный пломбир со&nbsp;сладкой посыпкой</p>
             </a>
             <b class="product-card-price">320 ₽/кг</b>
             <a class="product-card-button button" href="#">
@@ -228,9 +223,9 @@
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="img/catalog/catalog-blackberry.png" width="168" height="168" alt="">
+              <img class="product-card-image" src="img/catalog/catalog-blackberry.png" width="192" height="184" alt="">
               <h3 class="product-card-title">Ежевика</h3>
-              <p class="product-card-text">Сливочное мороженое с ежевичным джемом</p>
+              <p class="product-card-text">Сливочное мороженое с&nbsp;ежевичным джемом</p>
             </a>
             <b class="product-card-price">330 ₽/кг</b>
             <a class="product-card-button button" href="#">
@@ -239,9 +234,9 @@
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="img/catalog/catalog-banana.png" width="168" height="168" alt="">
+              <img class="product-card-image" src="img/catalog/catalog-banana.png" width="192" height="184" alt="">
               <h3 class="product-card-title">Банан</h3>
-              <p class="product-card-text">Сливочный пломбир с банановым вкусом</p>
+              <p class="product-card-text">Сливочный пломбир с&nbsp;банановым вкусом</p>
             </a>
             <b class="product-card-price">340 ₽/кг</b>
             <a class="product-card-button button" href="#">
@@ -250,7 +245,7 @@
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="img/catalog/catalog-chokolate.png" width="168" height="168" alt="">
+              <img class="product-card-image" src="img/catalog/catalog-chokolate.png" width="192" height="184" alt="">
               <h3 class="product-card-title">Шоколадка</h3>
               <p class="product-card-text">Классический шоколадный пломбир</p>
             </a>
@@ -261,9 +256,9 @@
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="img/catalog/catalog-strawberry.png" width="168" height="168" alt="">
+              <img class="product-card-image" src="img/catalog/catalog-strawberry.png" width="192" height="184" alt="">
               <h3 class="product-card-title">Клубничка</h3>
-              <p class="product-card-text">Сливочный пломбир с клубничным вкусом</p>
+              <p class="product-card-text">Сливочный пломбир с&nbsp;клубничным вкусом</p>
             </a>
             <b class="product-card-price">300 ₽/кг</b>
             <a class="product-card-button button" href="#">
@@ -272,9 +267,9 @@
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="img/catalog/catalog-lemon.png" width="168" height="168" alt="">
+              <img class="product-card-image" src="img/catalog/catalog-lemon.png" width="192" height="184" alt="">
               <h3 class="product-card-title">Лимон </h3>
-              <p class="product-card-text">Освежающий лимонный сорбет</p>
+              <p class="product-card-text">Освежающий лимонный&nbsp;сорбет</p>
             </a>
             <b class="product-card-price">310 ₽/кг</b>
             <a class="product-card-button button" href="#">
@@ -283,9 +278,9 @@
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="img/catalog/catalog-mentol.png" width="168" height="168" alt="">
+              <img class="product-card-image" src="img/catalog/catalog-mentol.png" width="192" height="184" alt="">
               <h3 class="product-card-title">Ментол</h3>
-              <p class="product-card-text">Сливочный пломбир с ментоловым сиропом</p>
+              <p class="product-card-text">Сливочный пломбир с&nbsp;ментоловым сиропом</p>
             </a>
             <b class="product-card-price">320 ₽/кг</b>
             <a class="product-card-button button" href="#">
@@ -294,9 +289,9 @@
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="img/catalog/catalog-nut.png" width="168" height="168" alt="">
+              <img class="product-card-image" src="img/catalog/catalog-nut.png" width="192" height="184" alt="">
               <h3 class="product-card-title">Орешек</h3>
-              <p class="product-card-text">Фисташковый пломбир с шоколадным сиропом</p>
+              <p class="product-card-text">Фисташковый пломбир с&nbsp;шоколадным сиропом</p>
             </a>
             <b class="product-card-price">360 ₽/кг</b>
             <a class="product-card-button button" href="#">
@@ -305,9 +300,9 @@
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
-              <img class="product-card-image" src="img/catalog/catalog-creme-brulee.png" width="168" height="168" alt="">
+              <img class="product-card-image" src="img/catalog/catalog-creme-brulee.png" width="192" height="184" alt="">
               <h3 class="product-card-title">Крем-брюле</h3>
-              <p class="product-card-text">Классическое крем-брюле</p>
+              <p class="product-card-text">Классическое<br>крем-брюле</p>
             </a>
             <b class="product-card-price">280 ₽/кг</b>
             <a class="product-card-button button" href="#">
@@ -316,37 +311,43 @@
           </li>
         </ul>
 
-        <!--Paganation-->
+        <!--Pagination-->
         <div class="pagination-container">
-        <ul class="pagination">
+          <button class="button white-button button-pagination-show-more" type="button">Показать ещё</button>
+         <ul class="catalog-pagination">
           <li class="pagination-item">
             <a class="pagination-link pagination-prev pagination-disabled">
+              <svg class="pagination-icon pagination-icon-prev" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.8033 3.80515C10.063 3.54545 10.063 3.12439 9.8033 2.8647C9.54361 2.605 9.12255 2.605 8.86285 2.8647L4.19477 7.53277C3.93593 7.79162 3.93508 8.21075 4.19221 8.47065C4.19338 8.47183 4.19454 8.47301 4.19572 8.47418L8.8638 13.1423C9.12349 13.402 9.54455 13.402 9.80425 13.1423C10.0639 12.8826 10.0639 12.4615 9.80425 12.2018L5.60545 8.00301L9.8033 3.80515Z"/>
+              </svg>
               <span class="visually-hidden">Предыдущая страница</span>
             </a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link pagination-current">1</a>
+            <a class="pagination-link pagination-button pagination-button-current">1</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
+            <a class="pagination-link pagination-button" href="#">2</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
+            <a class="pagination-link pagination-button" href="#">3</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">4</a>
+            <a class="pagination-link pagination-button" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">5</a>
+            <a class="pagination-link pagination-button" href="#">5</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link pagination-next" href="#">
+              <svg class="pagination-icon pagination-icon-next" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.13526 2.8647C6.87557 2.605 6.45451 2.605 6.19481 2.8647C5.93511 3.12439 5.93511 3.54545 6.19481 3.80515L10.3961 8.00643L6.19477 12.2077C5.93508 12.4674 5.93508 12.8885 6.19477 13.1482C6.45447 13.4079 6.87553 13.4079 7.13523 13.1482L11.804 8.47944C11.8049 8.47852 11.8058 8.47759 11.8068 8.47666C12.0665 8.21696 12.0665 7.79591 11.8068 7.53621L7.13526 2.8647Z"/>
+              </svg>
               <span class="visually-hidden">Следующая страница</span>
             </a>
           </li>
         </ul>
-        <button class="button button-pagination-show-more" type="button">Показать ещё</button>
-      </div>
+        </div>
       </section>
       </div>
     </main>
@@ -354,25 +355,25 @@
     <footer class="page-footer">
       
       <!-- Social Networks-->
-      <section class="footer-social">
+      <section class="social">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
-          <ul class="social-list">
-            <li class="social-item"> 
-              <a class="button social-item-button" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">ВКонтакте</span>
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="button social-item-button" href="https://www.facebook.com/htmlacademy">
-                <span class="visually-hidden">Фейсбук</span>
-              </a>
-            </li>
-            <li class="social-item">
-              <a class="button social-item-button" href="https://www.instagram.com/htmlacademy/">
-                <span class="visually-hidden">Инстаграм</span>
-              </a>
-            </li>
-          </ul>
+        <ul class="social-list footer-social-list">
+          <li class="social-item"> 
+            <a class="button social-item-button vk" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">ВКонтакте</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="button social-item-button fb" href="https://www.facebook.com/htmlacademy">
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="button social-item-button instagram" href="https://www.instagram.com/htmlacademy/">
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
+          </li>
+        </ul>
       </section>
 
       <!-- Reglaments list-->
@@ -394,7 +395,7 @@
           <li class="footer-menu-item">
             <a class="footer-menu-link" href="#">Экологические стандарты</a>
           </li>
-        </div>
+          </div>
         </ul>
       </section>
 
