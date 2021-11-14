@@ -18,6 +18,27 @@
           </li>
           <li class="navigation-item">
             <a class="navigation-link navigation-link-current ">Каталог</a>
+            <div class="popover popover-subcatalog">
+              <div class="popover-content">
+                <a class="subcatalog-link subcatalog-link-main" href="#">
+                  <h2 class="popover-title subcatalog-title">Новинки</h2>
+                </a>
+                <ul class="subcatalog-items-list">
+                  <li class="subcatalog-item">
+                    <a class="subcatalog-link" href="#">Сливочное</a>
+                  </li>
+                  <li class="subcatalog-item">
+                    <a class="subcatalog-link" href="#">Щербеты</a>
+                  </li>
+                  <li class="subcatalog-item">
+                    <a class="subcatalog-link subcatalog-link-chosen" href="#">Фруктовый лед</a>
+                  </li>
+                  <li class="subcatalog-item">
+                    <a class="subcatalog-link" href="#">Мелорин</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Доставка и оплата</a>
@@ -43,6 +64,39 @@
               <a class="navigation-link button button-cart button-cart-full" href="#">
                 <span class="visually-hidden">В корзине </span>2 товара
               </a>
+              <div class="popover popover-cart">
+                <div class="popover-content">
+                  <h2 class="popover-title">Корзина</h2>
+                  <ul class="cart-items-list">
+                    <li class="cart-item">
+                      <img class="popover-cart-image" src="img/catalog/catalog-raspberry.png" width="50" height="50" alt="">
+                      <div class="cart-item-container">
+                        <p class="cart-item-title">Малинка</p>
+                        <p class="cart-item-description">1 кг х 310 ₽</p>
+                      </div>
+                      <p class="cart-item-price">310 ₽</p>
+                      <button class="button-delete-from-cart" type="button">
+                        <span class="visually-hidden">Удалить из корзины</span>
+                      </button>
+                    </li>
+                    <li class="cart-item">
+                      <img class="popover-cart-image" src="img/catalog/catalog-bubble-gum.png" width="46" height="46" alt="">
+                      <div class="cart-item-container">
+                        <p class="cart-item-title">Бабл-гам</p>
+                        <p class="cart-item-description">1,5 кг х 320 ₽</p>
+                      </div> 
+                      <p class="cart-item-price">480 ₽</p>
+                      <button class="button-delete-from-cart" type="button">
+                        <span class="visually-hidden">Удалить из корзины</span>
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="popover-footer">
+                    <a class="button red-button popover-button" href="#">Оформить заказ</a>
+                    <span class="popover-amount-price">Итого: 790 ₽</span>
+                  </div>
+                </div>
+              </div>
             </li>    
         </ul>
       </nav>
@@ -73,8 +127,8 @@
 
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Сортировка</legend>
-              <label class="visually-hidden" for="sorting">Сортировка</label>
+            <legend class="catalog-filter-title">Сортировка:</legend>
+              <label class="visually-hidden" for="sorting">Сортировка:</label>
               <select class="select-control" id="sorting" name="sorting">
                 <option value="popular" selected>по популярности</option>
                 <option value="cheap">по цене - сначала дешёвое</option>
@@ -84,22 +138,24 @@
           </fieldset>
           
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Цена
-              <label><input class="catalog-filter-input" type="number" name="min-price"> ₽ – </label>
-              <label><input class="catalog-filter-input" type="number" name="max-price"> ₽</label>
+            <legend class="catalog-filter-title catalog-filter-price">Цена:
+              <label><input class="catalog-filter-input" type="number" name="min-price" placeholder="100">₽ – </label>
+              <label><input class="catalog-filter-input" type="number" name="max-price" placeholder="500">₽</label>
             </legend>
-           <div class="container-price">
-            <button class="range-toggle toggle-min" type="button">
-              <span class="visually-hidden">Изменить минимальную цену</span>
-            </button>
-            <button class="range-toggle toggle-max" type="button">
-              <span class="visually-hidden">Изменить максимальную цену.</span>
-            </button>
-           </div> 
+              <div class="range-scale">
+                <div class="range-bar">
+                  <button class="range-toggle toggle-min" type="button">
+                    <span class="visually-hidden">Изменить минимальную цену</span>
+                  </button>
+                  <button class="range-toggle toggle-max" type="button">
+                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                  </button>
+                </div>
+              </div>
           </fieldset>
 
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Жирность</legend>
+            <legend class="catalog-filter-title">Жирность:</legend>
             <ul class="catalog-filter-list catalog-filter-list-fat">
               <li class="catalog-filter-item">
                 <label class="control">
@@ -133,7 +189,7 @@
           </fieldset>
 
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Наполнители</legend>
+            <legend class="catalog-filter-title">Наполнители:</legend>
             <ul class="catalog-filter-list catalog-filter-list-toping">
               <li class="catalog-filter-item">
                 <label class="control">
@@ -146,7 +202,7 @@
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="sugar-topings" checked>
                   <span class="control-mark"></span>
-              <span class="control-label">сахарные присыпки</span>
+              <span class="control-label">сахарные посыпки</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
@@ -352,7 +408,7 @@
       </div>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer catalog-footer">
       
       <!-- Social Networks-->
       <section class="social">
