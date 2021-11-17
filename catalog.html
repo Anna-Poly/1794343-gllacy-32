@@ -4,10 +4,11 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link href="styles/styles.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
   </head>
-  
-  
-  <body> 
+
+  <body>
     <header class="main-header">
       <nav class="navigation">
         <ul class="navigation-list">
@@ -49,12 +50,12 @@
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-              <span class="visually-hidden">Звоните нам по номеру</span>
+              <span class="visually-hidden">Звоните нам по номеру.</span>
               <a class="navigation-link navigation-link-tel" href="tel:+78005558628">+7 800 555-86-28</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link button button-search" href="#">
-                <span class="visually-hidden">Поиск</span>
+                <span class="visually-hidden">Поиск.</span>
               </a>
             </li>
             <li class="navigation-item">
@@ -62,8 +63,9 @@
             </li>
             <li class="navigation-item">
               <a class="navigation-link button button-cart button-cart-full" href="#">
-                <span class="visually-hidden">В корзине </span>2 товара
+                <span class="visually-hidden">В корзине.</span>2 товара
               </a>
+              <!-- Add class popover-open for opening popover -->
               <div class="popover popover-cart">
                 <div class="popover-content">
                   <h2 class="popover-title">Корзина</h2>
@@ -76,7 +78,7 @@
                       </div>
                       <p class="cart-item-price">310 ₽</p>
                       <button class="button-delete-from-cart" type="button">
-                        <span class="visually-hidden">Удалить из корзины</span>
+                        <span class="visually-hidden">Удалить товар из корзины.</span>
                       </button>
                     </li>
                     <li class="cart-item">
@@ -84,10 +86,10 @@
                       <div class="cart-item-container">
                         <p class="cart-item-title">Бабл-гам</p>
                         <p class="cart-item-description">1,5 кг х 320 ₽</p>
-                      </div> 
+                      </div>
                       <p class="cart-item-price">480 ₽</p>
                       <button class="button-delete-from-cart" type="button">
-                        <span class="visually-hidden">Удалить из корзины</span>
+                        <span class="visually-hidden">Удалить товар из корзины.</span>
                       </button>
                     </li>
                   </ul>
@@ -97,17 +99,17 @@
                   </div>
                 </div>
               </div>
-            </li>    
+            </li>
         </ul>
       </nav>
     </header>
     <main class="main-container main-inner">
-      <div class="page-container">
-      
+     <div class="page-container">
+
       <!--Breadcrumbs-->
       <header class="inner-header">
-        <h1 class="visually-hidden">Каталог</h1>
-        <ul class="breadcrumbs"> 
+        <h1 class="visually-hidden">Каталог.</h1>
+        <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">Главная</a>
           </li>
@@ -123,8 +125,7 @@
 
       <!--Filters and sorting-->
       <section class="catalog-products">
-        <h2 class="visually-hidden">Фильтры и сортировка</h2>
-
+        <h2 class="visually-hidden">Фильтры и сортировка товаров.</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Сортировка:</legend>
@@ -134,9 +135,8 @@
                 <option value="cheap">по цене - сначала дешёвое</option>
                 <option value="expensive">по цене - сначала дорогое</option>
               </select>
-              <button class="visually-hidden" type="submit">Отсортировать продукты</button>
+              <button class="visually-hidden" type="submit">Отсортировать продукты.</button>
           </fieldset>
-          
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title catalog-filter-price">Цена:
               <label><input class="catalog-filter-input" type="number" name="min-price" placeholder="100">₽ – </label>
@@ -145,7 +145,7 @@
               <div class="range-scale">
                 <div class="range-bar">
                   <button class="range-toggle toggle-min" type="button">
-                    <span class="visually-hidden">Изменить минимальную цену</span>
+                    <span class="visually-hidden">Изменить минимальную цену.</span>
                   </button>
                   <button class="range-toggle toggle-max" type="button">
                     <span class="visually-hidden">Изменить максимальную цену.</span>
@@ -153,7 +153,6 @@
                 </div>
               </div>
           </fieldset>
-
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Жирность:</legend>
             <ul class="catalog-filter-list catalog-filter-list-fat">
@@ -187,7 +186,6 @@
               </li>
             </ul>
           </fieldset>
-
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Наполнители:</legend>
             <ul class="catalog-filter-list catalog-filter-list-toping">
@@ -195,35 +193,35 @@
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="chocolate" checked>
                   <span class="control-mark"></span>
-              <span class="control-label">шоколадные</span>
+                  <span class="control-label">шоколадные</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="sugar-topings" checked>
                   <span class="control-mark"></span>
-              <span class="control-label">сахарные посыпки</span>
+                  <span class="control-label">сахарные посыпки</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="fruits">
                   <span class="control-mark"></span>
-              <span class="control-label">фрукты</span>
+                  <span class="control-label">фрукты</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="syrups">
                   <span class="control-mark"></span>
-              <span class="control-label">сиропы</span>
+                  <span class="control-label">сиропы</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="jams">
                   <span class="control-mark"></span>
-              <span class="control-label">джемы</span>
+                  <span class="control-label">джемы</span>
                 </label>
               </li>
             </ul>
@@ -376,7 +374,7 @@
               <svg class="pagination-icon pagination-icon-prev" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M9.8033 3.80515C10.063 3.54545 10.063 3.12439 9.8033 2.8647C9.54361 2.605 9.12255 2.605 8.86285 2.8647L4.19477 7.53277C3.93593 7.79162 3.93508 8.21075 4.19221 8.47065C4.19338 8.47183 4.19454 8.47301 4.19572 8.47418L8.8638 13.1423C9.12349 13.402 9.54455 13.402 9.80425 13.1423C10.0639 12.8826 10.0639 12.4615 9.80425 12.2018L5.60545 8.00301L9.8033 3.80515Z"/>
               </svg>
-              <span class="visually-hidden">Предыдущая страница</span>
+              <span class="visually-hidden">Предыдущая страница.</span>
             </a>
           </li>
           <li class="pagination-item">
@@ -399,34 +397,34 @@
               <svg class="pagination-icon pagination-icon-next" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M7.13526 2.8647C6.87557 2.605 6.45451 2.605 6.19481 2.8647C5.93511 3.12439 5.93511 3.54545 6.19481 3.80515L10.3961 8.00643L6.19477 12.2077C5.93508 12.4674 5.93508 12.8885 6.19477 13.1482C6.45447 13.4079 6.87553 13.4079 7.13523 13.1482L11.804 8.47944C11.8049 8.47852 11.8058 8.47759 11.8068 8.47666C12.0665 8.21696 12.0665 7.79591 11.8068 7.53621L7.13526 2.8647Z"/>
               </svg>
-              <span class="visually-hidden">Следующая страница</span>
+              <span class="visually-hidden">Следующая страница.</span>
             </a>
           </li>
-        </ul>
+         </ul>
         </div>
       </section>
-      </div>
+     </div>
     </main>
 
     <footer class="page-footer catalog-footer">
-      
+
       <!-- Social Networks-->
       <section class="social">
-        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+        <h2 class="visually-hidden">Мы в социальных сетях.</h2>
         <ul class="social-list footer-social-list">
-          <li class="social-item"> 
+          <li class="social-item">
             <a class="button social-item-button vk" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">ВКонтакте</span>
+              <span class="visually-hidden">ВКонтакте.</span>
             </a>
           </li>
           <li class="social-item">
             <a class="button social-item-button fb" href="https://www.facebook.com/htmlacademy">
-              <span class="visually-hidden">Фейсбук</span>
+              <span class="visually-hidden">Фейсбук.</span>
             </a>
           </li>
           <li class="social-item">
             <a class="button social-item-button instagram" href="https://www.instagram.com/htmlacademy/">
-              <span class="visually-hidden">Инстаграм</span>
+              <span class="visually-hidden">Инстаграм.</span>
             </a>
           </li>
         </ul>
@@ -434,32 +432,28 @@
 
       <!-- Reglaments list-->
       <section class="footer-menu">
-        <h2 class="visually-hidden">Регламенты</h2>
+        <h2 class="visually-hidden">Регламенты.</h2>
         <ul class="footer-menu-list">
-          <div class="footer-menu-item-part">
           <li class="footer-menu-item footer-menu-item-favorite">
             <a class="footer-menu-link footer-menu-link-favorite" href="#"><b>Для поставщиков</b></a>
           </li>
           <li class="footer-menu-item">
-            <a class="footer-menu-link" href="#">О производстве</a>
-          </li>
-          </div>
-          <div class="footer-menu-item-part">
-          <li class="footer-menu-item">
             <a class="footer-menu-link" href="#">Наши документы</a>
+          </li>
+          <li class="footer-menu-item">
+            <a class="footer-menu-link" href="#">О производстве</a>
           </li>
           <li class="footer-menu-item">
             <a class="footer-menu-link" href="#">Экологические стандарты</a>
           </li>
-          </div>
         </ul>
       </section>
 
       <!-- Copyright-->
       <section class="copyright">
-        <h2 class="visually-hidden">Авторское право</h2>
+        <h2 class="visually-hidden">Авторское право.</h2>
         <a class="html-logo-link" href="https://htmlacademy.ru/">
-          <img class="html-logo-image" src="img/logo_htmlacademy.svg" width="93" height="26.71" alt="Логототип html Академии.">
+          <img class="html-logo-image" src="img/logo_htmlacademy.svg" width="93" height="27" alt="Логототип html Академии.">
         </a>
         <p class="coopyright-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>&copy; 2021</p>
       </section>
